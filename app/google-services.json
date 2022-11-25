@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "63100782554",
+    "project_id": "tesiapp-d8ac4",
+    "storage_bucket": "tesiapp-d8ac4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63100782554:android:643ff62c0e7c8d794be2e3",
+        "android_client_info": {
+          "package_name": "com.example.tesiapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "63100782554-fn0kbf62n5tge4p3tn5kmspgu44cla4d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7U96h_oyNmRHr2UHysnqIn9lSkXFvSFM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "63100782554-fn0kbf62n5tge4p3tn5kmspgu44cla4d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
