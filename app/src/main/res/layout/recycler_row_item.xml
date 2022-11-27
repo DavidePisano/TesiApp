@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
     
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/_250sdp"
+        android:layout_height="250dp"
         android:id="@+id/myCardView"
-        app:cardElevation="@dimen/_3sdp"
-        android:layout_margin="@dimen/_4sdp"
+        app:cardElevation="3dp"
+        android:layout_margin="4dp"
         app:cardUseCompatPadding="true">
 
         <LinearLayout
@@ -24,7 +24,8 @@
                 android:layout_height="0dp"
                 android:id="@+id/ivImage"
                 android:layout_weight="4"
-                android:scaleType="centerCrop"/>
+                android:scaleType="centerCrop"
+                android:src="@drawable/im1"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -66,11 +67,12 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Rs.300"
+                        android:text="3$"
                         android:textSize="25sp"
                         android:textAlignment="center"
                         android:textColor="@color/primary"
-                        android:id="@+id/tvPrice"/>
+                        android:id="@+id/tvPrice"
+                        android:textStyle="bold"/>
 
                 </LinearLayout>
                 
