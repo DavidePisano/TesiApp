@@ -1,6 +1,7 @@
 package com.example.tesiapp.utilities;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 
@@ -14,6 +15,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.tesiapp.R;
+import com.example.tesiapp.activities.DetailActivity;
 import com.example.tesiapp.activities.ProductData;
 
 import java.util.List;
@@ -43,6 +45,18 @@ public class MyAdapter extends RecyclerView.Adapter<ProductViewHolder> {
         productViewHolder.mTitle.setText(myProductList.get(i).getItemName());
         productViewHolder.mDescription.setText(myProductList.get(i).getItemDescription());
         productViewHolder.mPrice.setText(myProductList.get(i).getItemPrice());
+
+        productViewHolder.mCardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(mContext, DetailActivity.class);
+                intent.putExtra("Image",myProductList.get(productViewHolder.getAdapterPosition()).getItemImage());
+                intent.putExtra("Description",myProductList.get(productViewHolder.getAdapterPosition()).getItemDescription());
+                mContext.startActivity(intent);
+
+            }
+        });
 
     }
 
